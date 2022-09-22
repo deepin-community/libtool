@@ -1,0 +1,28 @@
+Description: <add sunway support>
+Author: Miao Changwei <miaochangwei@uniontech.com>
+
+---
+Last-Update: 2022-04-17
+
+--- libtool-2.4.6.orig/build-aux/config.guess
++++ libtool-2.4.6/build-aux/config.guess
+@@ -1014,6 +1014,9 @@ EOF
+     sparc:Linux:*:* | sparc64:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
+ 	exit ;;
++    sw_64:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
++	exit ;;
+     tile*:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
+ 	exit ;;
+--- libtool-2.4.6.orig/build-aux/config.sub
++++ libtool-2.4.6/build-aux/config.sub
+@@ -310,6 +310,7 @@ case $basic_machine in
+ 	| sparc | sparc64 | sparc64b | sparc64v | sparc86x | sparclet | sparclite \
+ 	| sparcv8 | sparcv9 | sparcv9b | sparcv9v \
+ 	| spu \
++	| sw_64 \
+ 	| tahoe | tic4x | tic54x | tic55x | tic6x | tic80 | tron \
+ 	| ubicom32 \
+ 	| v850 | v850e | v850e1 | v850e2 | v850es | v850e2v3 \

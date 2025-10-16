@@ -1,3 +1,12 @@
+libtool (2.4.7-7deepin2) unstable; urgency=medium
+
+  * Apply changes from Helmut Grohne:
+    - Fix aclocal version matching to cope with minor-less versions.
+      (Closes: #1094400)
+      https://salsa.debian.org/mckinstry/libtool/-/commit/69b4bba
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 16 Oct 2025 15:19:48 +0800
+
 libtool (2.4.7-7deepin1) unstable; urgency=medium
 
   * Refresh Add-sunway-support.patch.

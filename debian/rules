@@ -6,8 +6,8 @@
 #export DH_VERBOSE=1
 
 # In case they are dropped
-SERIAL=4245
-VERSION=2.4.7
+SERIAL=4441
+VERSION=2.5.4
 
 include /usr/share/dpkg/architecture.mk
 DEB_CFLAGS_MAINT_PREPEND := -Wall

@@ -7,17 +7,16 @@ Build-Depends: debhelper-compat (= 13),
   help2man,
   texinfo,
   zlib1g-dev,
-  gnulib,
-  libltdl-dev <!nocheck>
+  gnulib
 Build-Conflicts: automake1.9, gcj-jdk
 Section: devel
 Priority: optional
 Maintainer: Alastair McKinstry <mckinstry@debian.org>
-Standards-Version: 4.6.2
+Standards-Version: 4.7.2
 Rules-Requires-Root: no
 Homepage: https://www.gnu.org/software/libtool/
-Vcs-Browser: https://salsa.debian.org:/mckinstry/libtool.git
-Vcs-Git: https://salsa.debian.org:/mckinstry/libtool.git -b debian/latest
+Vcs-Browser: https://salsa.debian.org/mckinstry/libtool.git
+Vcs-Git: https://salsa.debian.org/mckinstry/libtool.git -b debian/latest
 
 Package: libtool
 Architecture: all

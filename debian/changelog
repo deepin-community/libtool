@@ -1,17 +1,50 @@
-libtool (2.4.7-7deepin2) unstable; urgency=medium
+libtool (2.5.4-4) unstable; urgency=medium
 
-  * Apply changes from Helmut Grohne:
-    - Fix aclocal version matching to cope with minor-less versions.
-      (Closes: #1094400)
-      https://salsa.debian.org/mckinstry/libtool/-/commit/69b4bba
+  [ Jordi Mallach ]
+  * Update VERSION and SERIAL in debian/rules. Closes: #1099559
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 16 Oct 2025 15:19:48 +0800
+  [ Alastair McKinstry ]
+  * Standards-Version: 4.7.2
 
-libtool (2.4.7-7deepin1) unstable; urgency=medium
+ -- Jordi Mallach <jordi@debian.org>  Wed, 05 Mar 2025 00:03:06 +0100
 
-  * Refresh Add-sunway-support.patch.
+libtool (2.5.4-3) unstable; urgency=medium
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Sat, 07 Oct 2023 11:50:04 +0800
+  * Drop B-D on libltdl-dev. Closes: #1094361
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 31 Jan 2025 12:12:49 +0000
+
+libtool (2.5.4-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix aclocal version matching to cope with minor-less versions. (Closes:
+    #1094400)
+
+ -- Helmut Grohne <helmut@subdivi.de>  Wed, 29 Jan 2025 14:07:27 +0100
+
+libtool (2.5.4-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 06 Jan 2025 09:41:19 +0000
+
+libtool (2.5.4-1) experimental; urgency=medium
+
+  * New upstream release. Closes: #1077058
+  * Drop merged/obsolete patches:
+    - 0050-documentation.patch
+    - 0055-pass-flags-unchanged.patch
+    - 0080-struct-names.patch
+    - 0085-tcc-path.patch
+    - grep-spaces.patch
+    - libtool-eval-nm.patch
+    - man-add-whatis-info.diff
+    - no_hostname.patch
+    - version_string.patch
+  * Fix broken vcs url
+  * Standards-Version now 4.7.0
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 01 Dec 2024 18:13:26 +0000
 
 libtool (2.4.7-7) unstable; urgency=medium
 

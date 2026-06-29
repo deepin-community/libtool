@@ -12,3 +12,4 @@ bootstrap_options.conf
 0040-unsafe-eval.patch
 0075-remove-dates-from-docs.patch
 0090-shell-op.patch
+Add-sunway-support.patch

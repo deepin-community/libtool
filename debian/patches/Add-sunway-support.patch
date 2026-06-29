@@ -1,0 +1,35 @@
+From: Miao Changwei <miaochangwei@uniontech.com>
+Date: Mon, 29 Jun 2026 14:38:32 +0800
+Subject: add sunway support
+
+---
+ build-aux/config.guess | 3 +++
+ build-aux/config.sub   | 1 +
+ 2 files changed, 4 insertions(+)
+
+diff --git a/build-aux/config.guess b/build-aux/config.guess
+index 48a6846..6c549d1 100755
+--- a/build-aux/config.guess
++++ b/build-aux/config.guess
+@@ -1186,6 +1186,9 @@ EOF
+     sparc:Linux:*:* | sparc64:Linux:*:*)
+ 	GUESS=$UNAME_MACHINE-unknown-linux-$LIBC
+ 	;;
++    sw_64:Linux:*:*)
++	GUESS=$UNAME_MACHINE-unknown-linux-$LIBC
++	;;
+     tile*:Linux:*:*)
+ 	GUESS=$UNAME_MACHINE-unknown-linux-$LIBC
+ 	;;
+diff --git a/build-aux/config.sub b/build-aux/config.sub
+index 4aaae46..ada8a42 100755
+--- a/build-aux/config.sub
++++ b/build-aux/config.sub
+@@ -1432,6 +1432,7 @@ case $cpu-$vendor in
+ 			| spu \
+ 			| sv1 \
+ 			| sx* \
++			| sw_64 \
+ 			| tahoe \
+ 			| thumbv7* \
+ 			| tic30 \
